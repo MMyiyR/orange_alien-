@@ -1,0 +1,68 @@
+body {
+  background: #020013;
+  color: #333333;
+  font: 13px/1.231 Arial, Helvetica, sans-serif;
+}
+#bg1 {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 1000px;
+  z-index: 0;
+}
+#bg2 {
+  position: fixed;
+  width: 10%;
+  left: 60%;
+  top: 200px;
+  z-index: 1;
+}
+#bg3 {
+  position: fixed;
+  width: 100%;
+  bottom: 10px;
+  left: 0px;
+  top: 0px;
+  z-index: 9;
+}
+
+#hanabi_1 {
+  position: absolute;
+  z-index: 5;
+  width: 40%;
+}
+
+#hanabi_2 {
+  position: absolute;
+  z-index: 4;
+  width: 32%;
+}
+
+#hanabi_3 {
+  position: absolute;
+  z-index: 4;
+  width: 46%;
+  left: 18%;
+}
+
+#hanabi_4b {
+  position: absolute;
+  z-index: 4;
+  width: 68%;
+}
+#hanabi_4 {
+  position: absolute;
+  z-index: 4;
+  width: 68%;
+}
+#hanabi_4a {
+  position: absolute;
+  z-index: 4;
+  width: 68%;
+}
+
+#hanabi_5 {
+  position: absolute;
+  z-index: 4;
+  width: 60%;
+}
