@@ -10,7 +10,6 @@ $(function() {
     $('#hanabi_4b').css('top', '2300 ' - ( y / 1.5 ) + 'px');
     $('#hanabi_4').css('top', '2300 ' - ( y / 1.5 ) + 'px');
     $('#hanabi_4a').css('top', '2200 ' - ( y / 1.8 ) + 'px');
-    $('#hanabi_5').css('top', '2600 ' - ( y / 2 ) + 'px');
 
     // 表示非表示
     if (y >= 200 && y <= 500) {
@@ -49,7 +48,7 @@ $(function() {
       $('#hanabi_4a').fadeOut(1500);
     }
 
-    if (y >= 1800 && y <= 2400) {
+    if (y >= 2600 && y <= 2800) {
       $('#hanabi_5').fadeIn(700);
     } else {
       $('#hanabi_5').fadeOut(1000);
