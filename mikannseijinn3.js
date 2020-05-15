@@ -48,7 +48,7 @@ $(function() {
       $('#hanabi_4a').fadeOut(1500);
     }
 
-    if (y >= 2800 && y <= 3500) {
+    if (y >= 2200 && y <= 2400) {
       $('#hanabi_5').fadeIn(700);
     } else {
       $('#hanabi_5').fadeOut(1000);
