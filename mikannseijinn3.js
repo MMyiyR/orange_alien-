@@ -10,6 +10,7 @@ $(function() {
     $('#hanabi_4b').css('top', '2300 ' - ( y / 1.5 ) + 'px');
     $('#hanabi_4').css('top', '2300 ' - ( y / 1.5 ) + 'px');
     $('#hanabi_4a').css('top', '2200 ' - ( y / 1.8 ) + 'px');
+    $('#hanabi_5').css('top', '2600 ' - ( y / 2 ) + 'px');
 
     // 表示非表示
     if (y >= 200 && y <= 500) {
