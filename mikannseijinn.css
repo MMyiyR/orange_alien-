@@ -1,0 +1,28 @@
+body,
+h1, h2, h3, h4, h5, h6, p,
+ol, ul, li {
+  font-family: 'Montserrat Light',Montserrat,'Sawarabi Gothic',"游ゴシック","Yu Gothic","游ゴシック体",YuGothic,"Yu Gothic UI","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Meiryo UI","メイリオ",Meiryo,sans-serif;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ol, ul, li {
+  list-style-type: none;
+}
+body {
+  background-color: #FFFAFA;
+  width: 100%;
+}
+
+p {
+  font-size: 18px;
+}
+a {
+  font-size: 40px;
+}
+li {
+  text-align: center;
+  margin: 20px 0;
+}
