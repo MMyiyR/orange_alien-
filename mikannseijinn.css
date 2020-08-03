@@ -5,6 +5,11 @@ ol, ul, li {
   padding: 0;
   margin: 0;
 }
+
+.hatena {
+  background-color: black;
+  color: white;
+}
 a {
   text-decoration: none;
 }
