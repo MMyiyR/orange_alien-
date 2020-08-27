@@ -1,5 +1,5 @@
 $(function(){
-var scene, camera, renderer, mesh;
+var scene, camera, renderer, mesh, model;
 var meshFloor, ambientLight;
 var width = 2000;
 var height = 1100;
