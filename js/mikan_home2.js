@@ -96,14 +96,14 @@ function render() {
 				var mX = e.pageX;  //X
 				var mY = e.pageY;  //Y
 
-//				model.rotation.x = mY / 240;
-//				model.rotation.y = mX / 240;
-//				model.rotation.z = (mX - mY) / 100;
+				model.rotation.x = mY / 240;
+				model.rotation.y = mX / 240;
+				model.rotation.z = (mX - mY) / 100;
 
 			});
 		}
-     model.rotation.x -= 0.00525;
-     model.rotation.y += 0.0035;
+//     model.rotation.x -= 0.00525;
+//     model.rotation.y += 0.0035;
 
 		mesh.rotation.x -= 0.000525;
 		mesh.rotation.y += 0.00035;
