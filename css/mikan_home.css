@@ -1,8 +1,9 @@
-
+html,
+body,
+div,
 p,
 a,
-body,
-html {
+iframe {
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -25,9 +26,6 @@ ol, ul, li {
   margin: 0;
   font-weight: 200;
 }
-/* a {
-  text-decoration: none;
-} */
 ol, ul, li {
   list-style-type: none;
 }
@@ -37,13 +35,12 @@ body {
 }
 
 /* +++++++++++++++++++++++++++ back-3d +++++++++++++++++++++++++++ */
-canvas {
+#canvas {
   position: fixed;
-  position: relative;
   z-index: 1;
   top: 0;
   overflow: auto;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 /* +++++++++++++++++++++++++++ main-all +++++++++++++++++++++++++++ */
 .main-all {
@@ -61,23 +58,28 @@ canvas {
   font-size: 22px;
   text-align: center;
   background-color: black;
+  opacity: 0.8;
   height: 100%;
   width: 100%;
 }
 
 /* +++++++++++++++++++++++++++ setumei +++++++++++++++++++++++++++ */
-.book-setumei {
+.setumei-img {
+  position: relative;
   height: 50px;
+  margin-bottom: 100px;
+}
+.setumei-img > img {
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+}
+.book-setumei {
   font-size: 20px;
-  background-color: gray;
-  display: flex;
-  align-items: center;
-}
-.book-setumei p {
-  margin: 0 auto;
-}
-.book-setumei a {
-  color: blue;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  line-height: 50px;
 }
 
 .setumei-text {
@@ -91,10 +93,76 @@ canvas {
 
 /* +++++++++++++++++++++++++++ block +++++++++++++++++++++++++++ */
 .block {
+  width: 1500px;
+  margin: auto;
+  margin-bottom: 2.5em;
+}
+
+.block-about {
+  width: 40%;
+  margin: .5em;
+}
+
+.about-me {
+  font-size: 3em;
+  text-align: center;
+  border-top: 3px dashed #FAFAfA;
+  border-bottom: 3px dashed #FAFAfA;
+  margin-top: 5px;
+}
+.block-about-text-text {
+  font-size: 1.5em;
+}
+
+.block-line {
+  height: 800px;
+  width: 60%;
+  margin: .5em;
+}
+.block-line-img {
+  height: 800px;
   width: 50%;
 }
-.block > div {
-  margin: .5em auto;
+.block-line-img-text {
+  margin: auto .5em;
+}
+.block-line-img-text-title {
+  font-size: 2.5em;
+  margin: .5em 0;
+}
+.block-line-img-text-title-text {
+  font-size: 1.5em;
+  line-height: 50px;
+}
+.block-line-img img {
+  width: 300px;
+  height: 300px;
+  margin: auto 0 auto auto;
+  text-align: right;
+}
+
+.block-map {
+  width: 1000px;
+  height: 800px;
+  margin: auto;
+  position: relative;
+}
+.block-map > p {
+  font-size: 1.6em;
+  position: absolute;
+  top: -0.8em;
+  left: -0.5em;
+  border-bottom: 3px dashed black;
+}
+
+.block-Twitter {
+  width: 30%;
+  margin: .5em;
+}
+.block-Twitter-text > p {
+  font-size: 2em;
+  padding: .5em;
+  text-align: center;
 }
 
 /* +++++++++++++++++++++++++++ ver +++++++++++++++++++++++++++ */
