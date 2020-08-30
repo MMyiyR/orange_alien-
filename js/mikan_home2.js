@@ -98,13 +98,13 @@ function render() {
 				var mX = mausu.pageX;  //X
 				var mY = mausu.pageY;  //Y
 
-				model.rotation.x = mY / 50;
-				model.rotation.y = mX / 50;
+				// model.rotation.x = mY / 50;
+				// model.rotation.y = mX / 50;
 
 			});
 		}
-    // model.rotation.x -= 0.00525;
-    // model.rotation.y += 0.0035;
+    model.rotation.x -= 0.00525;
+    model.rotation.y += 0.0035;
 
 		mesh.rotation.x -= 0.000525;
 		mesh.rotation.y += 0.00035;
