@@ -45,7 +45,7 @@ var player = { height:1.8, speed:0.2, turnSpeed:Math.PI*0.02 };
 
 
 
-	gltfLoader.load("/models/mkn3D2.glb", function(gltf){
+	gltfLoader.load("../models/mkn3D2.glb", function(gltf){
 		model = gltf.scene;
     model.scale.set(1,1,1);
     model.position.set(0,2,10);
