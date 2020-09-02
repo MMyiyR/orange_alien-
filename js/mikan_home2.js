@@ -13,10 +13,10 @@ var player = { height:1.8, speed:0.2, turnSpeed:Math.PI*0.02 };
 	camera = new THREE.PerspectiveCamera(45, width / height, 1, 1000);
 
 	mesh = new THREE.Mesh(
-		new THREE.BoxGeometry(50,50,50),
+		new THREE.BoxGeometry(100,100,100),
 		new THREE.MeshPhongMaterial({color:0xff4444, wireframe:true})
 	);
-	mesh.position.set(0,0,10);
+	mesh.position.set(0,0,0);
 	mesh.receiveShadow = true;
 	mesh.castShadow = true;
 	scene.add(mesh);
@@ -48,7 +48,7 @@ var player = { height:1.8, speed:0.2, turnSpeed:Math.PI*0.02 };
 	gltfLoader.load("https://myiym.github.io/ORNG_ALEN/models/mkn3D2.glb", function(gltf){
 		model = gltf.scene;
     model.scale.set(1,1,1);
-    model.position.set(0,2,10);
+    model.position.set(0,0,0);
 
     var animations = gltf.animations;
     var mixer = new THREE.AnimationMixer(model);
@@ -72,7 +72,7 @@ function render() {
 
 
 
-	camera.position.set(0, player.height, -5);
+	camera.position.set(0, 0, 10);
 	camera.lookAt(new THREE.Vector3(0,player.height,0));
 
 	renderer = new THREE.WebGLRenderer({
@@ -106,9 +106,9 @@ function render() {
     // model.rotation.x -= 0.00525;
     // model.rotation.y += 0.0035;
 
-		mesh.rotation.x -= 0.000525;
-		mesh.rotation.y += 0.00035;
-		mesh.rotation.z += 0.000705;
+		mesh.rotation.x = 35;
+		mesh.rotation.y += 0.0005;
+		// mesh.rotation.z -= 0.00014;
 
 
 
@@ -178,5 +178,21 @@ function render() {
 			$(".book-setumei p:eq(2)").delay(400).fadeIn();
 		};
 	});
+
+
+	var rot = 0;
+	tick();
+	function tick() {
+			rot += 0.2;
+			const radian = (rot * Math.PI) / 180;
+			camera.position.x = 10 * Math.sin(radian);
+			camera.position.z = 10 * Math.cos(radian);
+			camera.lookAt(new THREE.Vector3(0, 0, 0));
+		 renderer.render(scene, camera);
+		requestAnimationFrame(tick);
+	}
+
+
+
 
 });
